@@ -22,7 +22,7 @@ server.applyMiddleware({
   app,
   path: "/graphql",
   cors: {
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://studio.apollographql.com"],
     credentials: true,
   },
 });
